@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Launcher foreground adapted to show the FULL pose_tracker_logo.png without cropping.
+     We wrap the bitmap in an <inset> and give generous insets so adaptive mask
+     (circle / squircle) never crops important content. Adjust insets as needed. -->
+<inset xmlns:android="http://schemas.android.com/apk/res/android"
+    android:drawable="@drawable/pose_tracker_logo"
+    android:insetLeft="24dp"
+    android:insetTop="24dp"
+    android:insetRight="24dp"
+    android:insetBottom="24dp" />

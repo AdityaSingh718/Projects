@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- UVC (USB Video Class) devices -->
+    <!-- Class 239 (0xEF), Subclass 2, Protocol 1 is the standard UVC device identifier -->
+    <usb-device class="239" subclass="2" protocol="1" />
+    
+    <!-- Alternative: Specify vendor-specific webcams if needed -->
+    <!-- To find vendor-id and product-id, connect your webcam and run: adb shell lsusb -->
+    
+    <!-- Example: Logitech webcams (vendor-id="1133" for 0x046d in decimal) -->
+    <!-- Uncomment and modify for your specific webcam if UVC class detection doesn't work -->
+    <!-- <usb-device vendor-id="1133" /> -->
+    
+    <!-- Example: Microsoft LifeCam -->
+    <!-- <usb-device vendor-id="1118" /> -->
+    
+    <!-- Example: Generic Chinese webcams -->
+    <!-- <usb-device vendor-id="3141" /> -->
+</resources>

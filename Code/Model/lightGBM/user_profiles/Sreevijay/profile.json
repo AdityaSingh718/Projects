@@ -1,0 +1,16 @@
+{
+  "user_id": "Sreevijay",
+  "trained_at": "2025-11-16T13:55:01.049213+00:00",
+  "training_samples": 528,
+  "test_samples": 133,
+  "base_reference_file": "C:\\Users\\user\\ESW\\ESWposedetection\\Model\\lightGBM\\trainGBM\\reference_posture.json",
+  "personal_reference_file": "C:\\Users\\user\\ESW\\ESWposedetection\\Model\\lightGBM\\user_profiles\\Sreevijay\\reference_posture.json",
+  "reference_offsets": {
+    "neck": 1.970062286597397,
+    "back": 0.3495182803463308,
+    "legs": -6.882763272103702
+  },
+  "adjusted_folder": "C:\\Users\\user\\ESW\\ESWposedetection\\Model\\lightGBM\\user_profiles\\Sreevijay\\train_adjusted",
+  "model_path": "C:\\Users\\user\\ESW\\ESWposedetection\\Model\\lightGBM\\user_profiles\\Sreevijay\\lgbm_personalized_model.pkl",
+  "encoder_path": "C:\\Users\\user\\ESW\\ESWposedetection\\Model\\lightGBM\\user_profiles\\Sreevijay\\label_encoder_personalized.pkl"
+}

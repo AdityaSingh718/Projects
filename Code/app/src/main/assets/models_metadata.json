@@ -1,0 +1,129 @@
+{
+  "model_info": {
+    "version": "1.0.0",
+    "created": "2025-09-28",
+    "description": "Real pose detection models with hybrid TFLite + DLC architecture",
+    "source": "YOLOv8n from Ultralytics, HRNet from OpenMMLab converted to mobile formats"
+  },
+  "hybrid_strategy": {
+    "description": "Dual-format approach for universal compatibility and optimal performance",
+    "formats": ["tflite", "dlc"],
+    "selection_logic": "Runtime hardware detection chooses optimal backend"
+  },
+  "models": {
+    "yolov8n_person": {
+      "tflite": {
+        "filename": "models/tflite/yolov8n_person.tflite",
+        "size": "6.1MB",
+        "type": "object_detection",
+        "task": "person_detection", 
+        "input_shape": [1, 3, 640, 640],
+        "input_format": "RGB",
+        "output_format": "xyxy_conf_class",
+        "classes": ["person"],
+        "confidence_threshold": 0.5,
+        "nms_threshold": 0.4,
+        "target_devices": "Universal Android compatibility",
+        "expected_performance": {
+          "cpu": "100-150ms",
+          "gpu": "30-60ms"
+        },
+        "description": "Real YOLOv8n person detection converted to TensorFlow Lite"
+      },
+      "dlc": {
+        "filename": "models/dlc/yolov8n_person.dlc",
+        "size": "4.1MB",
+        "type": "object_detection",
+        "task": "person_detection",
+        "input_shape": [1, 3, 640, 640], 
+        "input_format": "RGB",
+        "output_format": "xyxy_conf_class",
+        "classes": ["person"],
+        "confidence_threshold": 0.5,
+        "nms_threshold": 0.4,
+        "target_devices": "Qualcomm Snapdragon with SNPE support",
+        "expected_performance": {
+          "hexagon_dsp": "10-20ms",
+          "power_efficiency": "60-75% reduction"
+        },
+        "description": "Real YOLOv8n person detection optimized for Qualcomm SNPE"
+      }
+    },
+    "hrnet_pose": {
+      "tflite": {
+        "filename": "models/tflite/hrnet_pose.tflite",
+        "size": "19MB",
+        "type": "pose_estimation",
+        "task": "human_pose", 
+        "input_shape": [1, 3, 256, 192],
+        "input_format": "RGB",
+        "output_format": "keypoints_heatmap",
+        "num_keypoints": 17,
+        "keypoint_format": "COCO",
+        "confidence_threshold": 0.3,
+        "target_devices": "Universal Android compatibility",
+        "expected_performance": {
+          "cpu": "200-300ms",
+          "gpu": "60-100ms"
+        },
+        "description": "Real HRNet pose estimation converted to TensorFlow Lite"
+      },
+      "dlc": {
+        "filename": "models/dlc/hrnet_pose.dlc",
+        "size": "11MB",
+        "type": "pose_estimation",
+        "task": "human_pose",
+        "input_shape": [1, 3, 256, 192],
+        "input_format": "RGB", 
+        "output_format": "keypoints_heatmap",
+        "num_keypoints": 17,
+        "keypoint_format": "COCO",
+        "confidence_threshold": 0.3,
+        "target_devices": "Qualcomm Snapdragon with SNPE support",
+        "expected_performance": {
+          "hexagon_dsp": "15-30ms",
+          "power_efficiency": "60-75% reduction"
+        },
+        "description": "Real HRNet pose estimation optimized for Qualcomm SNPE"
+      }
+    }
+  },
+  "pipeline": {
+    "description": "Two-stage real pose detection pipeline with backend switching",
+    "steps": [
+      "1. Runtime hardware detection (Qualcomm vs Universal)",
+      "2. Load appropriate model format (DLC vs TFLite)",
+      "3. YOLOv8n detects person bounding boxes",
+      "4. HRNet estimates 17-point pose keypoints within detected person ROI", 
+      "5. Results combined for final pose overlay with confidence scores"
+    ],
+    "backends": {
+      "snpe": "Qualcomm SNPE runtime for Snapdragon SoCs",
+      "tflite": "TensorFlow Lite runtime for universal compatibility"
+    }
+  },
+  "performance_comparison": {
+    "total_pipeline_time": {
+      "tflite_cpu": "300-450ms",
+      "tflite_gpu": "90-160ms", 
+      "snpe_dsp": "25-50ms"
+    },
+    "speedup_factor": {
+      "snpe_vs_tflite_cpu": "8-12x faster",
+      "snpe_vs_tflite_gpu": "3-5x faster"
+    },
+    "model_sizes": {
+      "tflite_total": "25.1MB",
+      "dlc_total": "15.1MB"
+    }
+  },
+  "keypoints": {
+    "format": "COCO 17-point",
+    "indices": {
+      "0": "nose", "1": "left_eye", "2": "right_eye", "3": "left_ear", "4": "right_ear",
+      "5": "left_shoulder", "6": "right_shoulder", "7": "left_elbow", "8": "right_elbow",
+      "9": "left_wrist", "10": "right_wrist", "11": "left_hip", "12": "right_hip",
+      "13": "left_knee", "14": "right_knee", "15": "left_ankle", "16": "right_ankle"
+    }
+  }
+}

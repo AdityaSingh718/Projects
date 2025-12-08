@@ -1,0 +1,205 @@
+{
+  "timestamp": "2025-11-03T15:20:15.265390",
+  "image_shape": {
+    "height": 480,
+    "width": 640,
+    "channels": 3
+  },
+  "num_persons_detected": 1,
+  "persons": [
+    {
+      "person_id": 0,
+      "keypoints": [
+        {
+          "name": "nose",
+          "x": 192.88345336914062,
+          "y": 136.32315063476562,
+          "confidence": 0.9346777200698853,
+          "visible": true
+        },
+        {
+          "name": "left_eye",
+          "x": 195.90771484375,
+          "y": 125.31495666503906,
+          "confidence": 0.9800379276275635,
+          "visible": true
+        },
+        {
+          "name": "right_eye",
+          "x": 195.11785888671875,
+          "y": 128.1092529296875,
+          "confidence": 0.15715745091438293,
+          "visible": false
+        },
+        {
+          "name": "left_ear",
+          "x": 225.8599395751953,
+          "y": 120.42655944824219,
+          "confidence": 0.9859405755996704,
+          "visible": true
+        },
+        {
+          "name": "right_ear",
+          "x": 222.40333557128906,
+          "y": 123.5965576171875,
+          "confidence": 0.005713779479265213,
+          "visible": false
+        },
+        {
+          "name": "left_shoulder",
+          "x": 289.2130432128906,
+          "y": 154.7229461669922,
+          "confidence": 0.9931318163871765,
+          "visible": true
+        },
+        {
+          "name": "right_shoulder",
+          "x": 274.30645751953125,
+          "y": 155.6790313720703,
+          "confidence": 0.8004891872406006,
+          "visible": true
+        },
+        {
+          "name": "left_elbow",
+          "x": 339.8027648925781,
+          "y": 229.72344970703125,
+          "confidence": 0.9906119704246521,
+          "visible": true
+        },
+        {
+          "name": "right_elbow",
+          "x": 291.9205017089844,
+          "y": 222.74148559570312,
+          "confidence": 0.41208571195602417,
+          "visible": false
+        },
+        {
+          "name": "left_wrist",
+          "x": 253.59698486328125,
+          "y": 250.39035034179688,
+          "confidence": 0.9918053150177002,
+          "visible": true
+        },
+        {
+          "name": "right_wrist",
+          "x": 252.52523803710938,
+          "y": 249.0052947998047,
+          "confidence": 0.6877343654632568,
+          "visible": true
+        },
+        {
+          "name": "left_hip",
+          "x": 336.1490173339844,
+          "y": 273.8755187988281,
+          "confidence": 0.9817206859588623,
+          "visible": true
+        },
+        {
+          "name": "right_hip",
+          "x": 329.2105407714844,
+          "y": 262.4007263183594,
+          "confidence": 0.9127915501594543,
+          "visible": true
+        },
+        {
+          "name": "left_knee",
+          "x": 212.6739959716797,
+          "y": 288.53759765625,
+          "confidence": 0.9889999032020569,
+          "visible": true
+        },
+        {
+          "name": "right_knee",
+          "x": 211.4230194091797,
+          "y": 266.6912536621094,
+          "confidence": 0.9397172927856445,
+          "visible": true
+        },
+        {
+          "name": "left_ankle",
+          "x": 223.37013244628906,
+          "y": 428.8305358886719,
+          "confidence": 0.9294715523719788,
+          "visible": true
+        },
+        {
+          "name": "right_ankle",
+          "x": 226.50469970703125,
+          "y": 393.685791015625,
+          "confidence": 0.8369316458702087,
+          "visible": true
+        }
+      ],
+      "confidence_scores": [
+        0.9346777200698853,
+        0.9800379276275635,
+        0.15715745091438293,
+        0.9859405755996704,
+        0.005713779479265213,
+        0.9931318163871765,
+        0.8004891872406006,
+        0.9906119704246521,
+        0.41208571195602417,
+        0.9918053150177002,
+        0.6877343654632568,
+        0.9817206859588623,
+        0.9127915501594543,
+        0.9889999032020569,
+        0.9397172927856445,
+        0.9294715523719788,
+        0.8369316458702087
+      ],
+      "average_confidence": 0.7958246147369638
+    }
+  ],
+  "personalization_adjustment": {
+    "user_id": "Sreevijay",
+    "base_reference_file": "reference_posture.json",
+    "personal_reference_file": "reference_posture.json",
+    "reference_offsets": {
+      "neck": 1.970062286597397,
+      "back": 0.3495182803463308,
+      "legs": -6.882763272103702
+    },
+    "original_angles": {
+      "neck": 139.92924725081124,
+      "back": 75.27167499679668,
+      "legs": 92.41201610990008
+    },
+    "adjusted_angles": {
+      "neck": 141.89930953740864,
+      "back": 75.621193277143,
+      "legs": 85.52925283779638
+    },
+    "simulated_deviation": {
+      "neck": -19.29099085631202,
+      "back": -26.796777036981837,
+      "legs": -1.6937668383293243
+    },
+    "manual_summary": {
+      "label": "Neck & Back Misalignment",
+      "score": 79.42756957665654,
+      "details": [
+        {
+          "region": "neck",
+          "angle": 141.89930953740864,
+          "status": "INCORRECT (Too Bent/Forward)",
+          "suggestion": "FIX: Your neck is bent too far forward. Tuck your chin in."
+        },
+        {
+          "region": "back",
+          "angle": 75.621193277143,
+          "status": "INCORRECT (Too Bent/Forward)",
+          "suggestion": "FIX: You are slouching. Sit up straight and engage your core."
+        },
+        {
+          "region": "legs",
+          "angle": 85.52925283779638,
+          "status": "GOOD",
+          "suggestion": "No correction needed."
+        }
+      ]
+    },
+    "adjusted_at": "2025-11-16T13:54:58.734583+00:00"
+  }
+}
