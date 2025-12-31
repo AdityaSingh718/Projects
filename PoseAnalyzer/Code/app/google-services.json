@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "89487615103",
+    "project_id": "pose-detection-project",
+    "storage_bucket": "pose-detection-project.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:89487615103:android:edb98a497cdd5f78c78b4a",
+        "android_client_info": {
+          "package_name": "com.example.eswproject"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDhxeGn691fCYvKbokrVN5n9x_RQAb1Js"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

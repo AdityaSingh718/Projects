@@ -1,0 +1,16 @@
+{
+  "user_id": "Prashant",
+  "trained_at": "2025-11-03T10:30:00.783122+00:00",
+  "training_samples": 528,
+  "test_samples": 133,
+  "base_reference_file": "/home/tanushgarg18/Projects/ESWposedetection/Model/lightGBM/trainGBM/reference_posture.json",
+  "personal_reference_file": "/home/tanushgarg18/Projects/ESWposedetection/Model/lightGBM/user_profiles/Prashant/reference_posture.json",
+  "reference_offsets": {
+    "neck": 7.630584051846313,
+    "back": 7.151028344577213,
+    "legs": -0.042548266793829725
+  },
+  "adjusted_folder": "/home/tanushgarg18/Projects/ESWposedetection/Model/lightGBM/user_profiles/Prashant/train_adjusted",
+  "model_path": "/home/tanushgarg18/Projects/ESWposedetection/Model/lightGBM/user_profiles/Prashant/lgbm_personalized_model.pkl",
+  "encoder_path": "/home/tanushgarg18/Projects/ESWposedetection/Model/lightGBM/user_profiles/Prashant/label_encoder_personalized.pkl"
+}
