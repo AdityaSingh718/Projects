@@ -1,5 +1,5 @@
-#ifndef E1_H
-#define E1_H
+#ifndef BUILTIN_ACTIVITIES_H
+#define BUILTIN_ACTIVITIES_H
 
 #include <unistd.h>
 #include <stdio.h>

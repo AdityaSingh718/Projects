@@ -6,14 +6,14 @@
 #include <fcntl.h>
 #include <errno.h>
 #include <string.h>
-#include "A3.h"
-#include "B1.h"
-#include "B2.h"
-#include "B3.h"
-#include "C.h"
-#include "E1.h"
-#include "E2.h"
-#include "E3.h"
+#include "parser.h"
+#include "builtin_hop.h"
+#include "builtin_reveal.h"
+#include "builtin_log.h"
+#include "executor.h"
+#include "builtin_activities.h"
+#include "builtin_ping.h"
+#include "signals.h"
 
 // Background job management constants and structures
 #define MAX_BACKGROUND_JOBS 100

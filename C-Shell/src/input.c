@@ -1,4 +1,4 @@
-#include "../include/A2.h"
+#include "../include/input.h"
 
 char* read_input() {
     static char input[4097];

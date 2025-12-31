@@ -1,5 +1,5 @@
-#ifndef A3_H
-#define A3_H
+#ifndef PARSER_H
+#define PARSER_H
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -8,7 +8,7 @@
 #include <unistd.h>
 #include <errno.h>
 #include <fcntl.h>
-#include "A2.h"
+#include "input.h"
 
 extern int f;
 /* ############## LLM Generated Code Begins ################ */

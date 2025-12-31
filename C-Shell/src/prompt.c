@@ -1,4 +1,4 @@
-#include "../include/A1.h"
+#include "../include/prompt.h"
 
 char homedir[4097];
 

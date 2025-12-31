@@ -1,5 +1,5 @@
-#ifndef C_H
-#define C_H
+#ifndef EXECUTOR_H
+#define EXECUTOR_H
 
 #include <stdio.h>
 #include <stdlib.h>

@@ -1,5 +1,5 @@
-#ifndef A1_H
-#define A1_H
+#ifndef PROMPT_H
+#define PROMPT_H
 
 #include <stdio.h>
 #include <unistd.h>

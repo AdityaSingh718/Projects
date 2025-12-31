@@ -1,6 +1,6 @@
-#include "../include/E4.h"
+#include "../include/builtin_jobs.h"
 #include "../include/shell.h"
-#include "../include/E3.h"
+#include "../include/signals.h"
 
 /* ############## LLM Generated Code Begins ################ */
 

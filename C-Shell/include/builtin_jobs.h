@@ -1,5 +1,5 @@
-#ifndef E4_H
-#define E4_H
+#ifndef BUILTIN_JOBS_H
+#define BUILTIN_JOBS_H
 
 #include <unistd.h>
 #include <stdio.h>

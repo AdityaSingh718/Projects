@@ -1,5 +1,5 @@
-#ifndef B1_H
-#define B1_H
+#ifndef BUILTIN_HOP_H
+#define BUILTIN_HOP_H
 
 #include <unistd.h>
 #include <stdio.h>
@@ -9,7 +9,7 @@
 #include <limits.h>
 #include <fcntl.h>
 #include <sys/param.h>
-#include "A1.h"
+#include "prompt.h"
 
 #ifndef PATH_MAX
 #define PATH_MAX 4096

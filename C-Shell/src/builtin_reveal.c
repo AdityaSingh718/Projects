@@ -1,4 +1,4 @@
-#include "../include/B2.h"
+#include "../include/builtin_reveal.h"
 /* ############## LLM Generated Code Begins ################ */
 /* Resolve special paths like hop does */
 static const char *resolve_path(const char *arg, char *buf, size_t buflen) {

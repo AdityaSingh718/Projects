@@ -1,5 +1,5 @@
-#ifndef B2_H
-#define B2_H
+#ifndef BUILTIN_REVEAL_H
+#define BUILTIN_REVEAL_H
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -10,8 +10,8 @@
 #include <limits.h>
 #include <sys/types.h>
 #include <fcntl.h>
-#include "A1.h"
-#include "B1.h"
+#include "prompt.h"
+#include "builtin_hop.h"
 
 int builtin_reveal(int argc, char **argv, char *output_file, int append);
 

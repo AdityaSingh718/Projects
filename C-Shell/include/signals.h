@@ -1,5 +1,5 @@
-#ifndef E3_H
-#define E3_H
+#ifndef SIGNALS_H
+#define SIGNALS_H
 
 #include <unistd.h>
 #include <stdio.h>
@@ -10,7 +10,7 @@
 #include <sys/wait.h>
 #include <sys/types.h>
 #include <time.h>
-#include "A1.h"
+#include "prompt.h"
 
 // Global variables for tracking foreground process
 extern pid_t foreground_pid;

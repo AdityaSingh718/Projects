@@ -1,5 +1,5 @@
 #include "../include/shell.h"
-#include "../include/E4.h"
+#include "../include/builtin_jobs.h"
 
 /* ############## LLM Generated Code Begins ################ */
 /* Global flag to track if log command was run */

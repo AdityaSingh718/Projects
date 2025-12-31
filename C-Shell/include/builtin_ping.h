@@ -1,5 +1,5 @@
-#ifndef E2_H
-#define E2_H
+#ifndef BUILTIN_PING_H
+#define BUILTIN_PING_H
 
 #include <unistd.h>
 #include <stdio.h>

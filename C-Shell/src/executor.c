@@ -1,5 +1,5 @@
-#include "../include/C.h"
-#include "../include/E3.h"
+#include "../include/executor.h"
+#include "../include/signals.h"
 
 int execute_command(int argc, char **argv, char *input_file, char *output_file, int append) {
     if (argc == 0) return 0;
